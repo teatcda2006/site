@@ -11,7 +11,7 @@
       printed press or on websites - news reports, in a special section in the
       newspaper.
     </p>
-    <a href="{% url 'news_page' %}" class="btn">News List</a>
+    <a href="{% url 'news_page' %}" class="btn">News</a>
   </div>
 </section>
 
@@ -21,13 +21,13 @@
     <div class="room-row">
       {% if latest_news %} {% for i in latest_news %}
       <div class="card">
-        <img class="img" src="{{ i.image }}" alt="icon" />
+        <div class="img">
+          <img src="{{ i.image }}" alt="icon" />
+        </div>
         <h1 class="head">{{ i.title }}</h1>
         <div class="card-details">
           <p class="news-date">{{ i.created_at }}</p>
-          <a href="{% url 'news_detail_page' i.pk %}" class="btn_news"
-            >Details</a
-          >
+          <a href="{% url 'news_detail_page' i.pk %}" class="btn_news">Details</a>
         </div>
       </div>
       {% endfor %} {% else %} Статьи не найдены {% endif %}

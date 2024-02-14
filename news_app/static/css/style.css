@@ -8,6 +8,23 @@
 
 /* you need this */
 
+#menu-btn {
+  display: none;
+}
+
+#menuList {
+  display: none;
+}
+
+.mobile-menu {
+  text-align: right;
+}
+
+.mobile-menu .menu-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
 .container {
   margin: 0 85px;
 }
@@ -150,7 +167,6 @@
   background-color: white;
   align-items: center;
   height: fit-content;
-  display: flex;
   padding: 35px 0;
 }
 
@@ -178,8 +194,7 @@
   background: white;
   padding: 30px 15px;
   margin: 15px;
-  width: max-content;
-  height: max-content;
+  flex-basis: 22%;
 
   border: 3px solid rgb(95, 95, 95);
   border-radius: 20px;
@@ -187,10 +202,14 @@
 }
 
 .img {
-  width: 200px;
-  height: 130px;
   border: 5px hidden white;
   border-radius: 20px;
+}
+
+.img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
 }
 
 .card-details {
@@ -271,3 +290,53 @@
 }
 
 /* about */
+
+
+
+/* media */
+
+@media screen and (max-width: 900px) {
+  #menu-btn {
+    display: block;
+    background-color: rgb(17, 138, 236);
+    color: white;
+    border: none;
+    font-size: 30px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .container {
+    margin: 0 20px;
+  }
+
+  .home {
+    height: 100%;
+    padding: 50px 0;
+    display: block;
+    text-align: center;
+  }
+
+  .home-desc {
+    width: 100%;
+  }
+
+  .room-row {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .img-news-details {
+    width: 500px;
+    height: 500px;
+  }
+
+  .news-text {
+    text-align: center;
+    margin: 0 20px;
+  }
+}
+
+/* media */
