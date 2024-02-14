@@ -1,0 +1,38 @@
+{% extends '../base.html' %} {% load static %} {% block content %}
+
+<section class="home">
+  <div class="container">
+    <h1 class="home-title">News</h1>
+    <p class="home-desc">
+      News is information that is of political, social or economic interest to
+      the audience in its freshness, that is, reports about events that have
+      occurred recently or are currently occurring. News is also called programs
+      (a collection of several news items) on television and radio, and in the
+      printed press or on websites - news reports, in a special section in the
+      newspaper.
+    </p>
+    <a href="{% url 'news_page' %}" class="btn">News List</a>
+  </div>
+</section>
+
+<section class="room">
+  <div class="container">
+    <h2 class="room-title">Last News</h2>
+    <div class="room-row">
+      {% if latest_news %} {% for i in latest_news %}
+      <div class="card">
+        <img class="img" src="{{ i.image }}" alt="icon" />
+        <h1 class="head">{{ i.title }}</h1>
+        <div class="card-details">
+          <p class="news-date">{{ i.created_at }}</p>
+          <a href="{% url 'news_detail_page' i.pk %}" class="btn_news"
+            >Details</a
+          >
+        </div>
+      </div>
+      {% endfor %} {% else %} Статьи не найдены {% endif %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,273 @@
+/* start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* start */
+
+/* you need this */
+
+.container {
+  margin: 0 85px;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  border: solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px 40px;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+
+.btn_news {
+  background-color: transparent;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  border: solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  padding: 10px 40px;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+
+.btn_news:hover {
+  background-color: rgba(143, 143, 143, 0.4);
+  color: black;
+}
+
+.btn_back {
+  background-color: transparent;
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 35px;
+  border: solid black;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 25px;
+  padding: 10px 40px;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+
+.btn_back:hover {
+  background-color: rgba(143, 143, 143, 0.4);
+  color: black;
+}
+
+/* tou need this */
+
+/* header */
+.header {
+  padding: 10px 0;
+  background-color: rgb(17, 138, 236);
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 80px;
+  border: 5px hidden white;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.nav-list {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* header */
+
+/* main .home */
+
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+.home-title {
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home-desc {
+  font-size: 30px;
+  font-weight: 300;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+/* main .home */
+
+/* main .room */
+
+.room {
+  background-color: white;
+  align-items: center;
+  height: fit-content;
+  display: flex;
+  padding: 35px 0;
+}
+
+.room-title {
+  color: rgb(9, 107, 192);
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: 35px;
+}
+
+.room-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card {
+  margin-top: 50px;
+  text-align: center;
+  color: black;
+  background: white;
+  padding: 30px 15px;
+  margin: 15px;
+  width: max-content;
+  height: max-content;
+
+  border: 3px solid rgb(95, 95, 95);
+  border-radius: 20px;
+  box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.6);
+}
+
+.img {
+  width: 200px;
+  height: 130px;
+  border: 5px hidden white;
+  border-radius: 20px;
+}
+
+.card-details {
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.head {
+  margin: 20px 0;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.news-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.news-date {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* main .room */
+
+/* footer */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 90px 0;
+  text-align: center;
+}
+
+/* footer */
+
+/* news-detail */
+
+.news-detail {
+  min-height: 100vh;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img-news-details {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.news-date {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.news-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin: 0 400px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* news-detail */
+
+/* about */
+
+.about {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* about */
